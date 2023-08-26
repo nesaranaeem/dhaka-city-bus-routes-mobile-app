@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "bus-routes",
-    "slug": "bus-routes",
-    "version": "1.0.0",
+    "name": "Dhaka City Bus Routes",
+    "slug": "dhaka-city-bus-routes",
+    "version": "10.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -21,10 +19,32 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ncosync.dhakacitybusroutes",
+      "versionCode": 10
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "351f1d57-4cc5-417d-b77f-7fdbe8a28bab"
+      }
     }
+  },
+  "plugins": [
+    [
+      "expo-build-properties",
+      {
+        "android": {
+          "compileSdkVersion": 33,
+          "targetSdkVersion": 33,
+          "buildToolsVersion": "33.0.0"
+        }
+      }
+    ]
+  ],
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-7938825868377602~7205757663"
   }
 }
